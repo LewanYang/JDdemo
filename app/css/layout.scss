@@ -1,0 +1,9 @@
+// mixin 是继承的思想
+@charset "UTF-8";
+
+@mixin flex($direction:column,$inline:block) {
+  display: if($inline==block,flex,inline-flex); // 如果inline为block，那么就是flex，反之为inline-flex
+  flex-direction: $direction;
+  flex-wrap: wrap;
+}
+
